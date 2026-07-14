@@ -1,280 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Faiz Khan // Programmatic SEO & Data Automation Suite</title>
-    <!-- Tailwind Engine -->
+    <title>Ali Faiz Khan // Programmatic SEO & Data Automation Platform</title>
+    <!-- Tailwind CSS CDN Engine -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Icons Layer -->
+    <!-- Icons Matrix & Chart Engine -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Premium Cyber Fonts Architecture -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #040711; background-image: radial-gradient(circle at 50% 0%, #0d1527 0%, #040711 70%); }
-        .mono-font { font-family: 'JetBrains Mono', monospace; }
-        .glass-panel { background: rgba(9, 14, 28, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.04); box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.8); }
-        .cyber-card { border: 1px solid rgba(16, 185, 129, 0.08); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .cyber-card:hover { border-color: rgba(16, 185, 129, 0.3); box-shadow: 0 0 30px rgba(16, 185, 129, 0.1); transform: translateY(-2px); }
-        .tab-active { background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3); color: #10b981; }
-        /* Scrollbar Optimization */
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: #040711; }
-        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: rgba(16, 185, 129, 0.4); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #03060f; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glass-panel { background: rgba(8, 12, 24, 0.75); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.03); }
+        .sidebar-item-active { background: rgba(16, 185, 129, 0.08); border-left: 3px solid #10b981; color: #fff; }
     </style>
 </head>
-<body class="text-gray-400 antialiased selection:bg-emerald-500 selection:text-black min-h-screen flex flex-col items-center justify-start p-4 md:p-8">
+<body class="text-gray-400 antialiased selection:bg-emerald-500 selection:text-black min-h-screen flex flex-col">
 
-    <!-- MASTER CONTAINER -->
-    <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+    <!-- PLATFORM HEADER MODULE -->
+    <header class="w-full border-b border-gray-900/60 bg-[#050914] px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white font-bold text-sm tracking-tighter">AFK</div>
+            <div class="h-4 w-[1px] bg-gray-800"></div>
+            <span class="text-xs uppercase tracking-widest text-gray-500 font-bold mono">Core_Control_v2.6</span>
+        </div>
+        <div class="flex items-center gap-4 text-xs">
+            <span class="flex items-center gap-1.5 text-emerald-400 font-medium"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> SYSTEM_SECURE</span>
+        </div>
+    </header>
+
+    <!-- MAIN INTERFACE MATRIX -->
+    <div class="w-full max-w-7xl mx-auto flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6 p-4 md:p-6 items-start">
         
-        <!-- ================= SIDEBAR: PLATFORM CONTROLLER PANEL (4 Columns) ================= -->
-        <aside class="lg:col-span-4 w-full flex flex-col gap-6 lg:sticky lg:top-8">
-            
-            <!-- Identity Core -->
-            <div class="glass-panel border border-gray-800/80 rounded-2xl p-6 relative overflow-hidden">
-                <div class="absolute -top-16 -right-16 w-36 h-36 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-                
-                <!-- Modern Visual Avatar Token -->
-                <div class="flex items-center gap-4">
-                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-emerald-500 via-teal-600 to-blue-600 p-[1px]">
-                        <div class="w-full h-full bg-[#040711] rounded-xl flex items-center justify-center text-white text-xl font-bold tracking-wider">
-                            AFK
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-white tracking-tight">Ali Faiz Khan</h1>
-                        <p class="text-emerald-400 font-medium tracking-wide mono-font text-[10px] uppercase mt-0.5">Automated SEO Architecture</p>
-                    </div>
-                </div>
-
-                <p class="text-xs text-gray-400 mt-5 leading-relaxed">
-                    Senior SEO Executive engineering programmatic pipelines to convert data diagnostics into organic traffic assets. Specialized in index scale, crawling nodes validation, and localized map framework automation.
-                </p>
-
-                <div class="h-[1px] bg-gradient-to-r from-transparent via-gray-800 to-transparent my-5"></div>
-
-                <!-- Live Identity Context Params -->
-                <div class="space-y-3 text-xs mono-font">
-                    <div class="flex items-center justify-between text-gray-500">
-                        <span>[env_status]</span>
-                        <span class="text-emerald-400 font-semibold flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>Production_Ready</span>
-                    </div>
-                    <div class="flex items-center justify-between text-gray-500">
-                        <span>[direct_mail]</span>
-                        <a href="mailto:alifaizkhan198@gmail.com" class="text-gray-300 hover:text-emerald-400 transition">alifaizkhan198@gmail.com</a>
-                    </div>
-                    <div class="flex items-center justify-between text-gray-500">
-                        <span>[comms_node]</span>
-                        <span class="text-gray-300">+91 9310454229</span>
-                    </div>
-                    <div class="flex items-center justify-between text-gray-500">
-                        <span>[geo_location]</span>
-                        <span class="text-gray-300">New Delhi, IN</span>
-                    </div>
-                </div>
-
-                <div class="mt-6 flex flex-col gap-2">
-                    <a href="https://www.linkedin.com/in/ali-faiz-khan" target="_blank" class="w-full bg-gradient-to-r from-emerald-500 via-emerald-600 to-teal-600 text-black font-bold py-3 px-4 rounded-xl text-xs tracking-wide uppercase transition hover:opacity-95 shadow-lg shadow-emerald-950/20 text-center flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-linkedin text-sm"></i> Authenticate Credentials
-                    </a>
-                </div>
+        <!-- SIDE NAVIGATION ENGINE (3 Columns) -->
+        <aside class="lg:col-span-3 w-full flex flex-col gap-4 lg:sticky lg:top-24">
+            <div class="glass-panel rounded-2xl p-4 flex flex-col gap-1">
+                <span class="text-[10px] uppercase font-bold text-gray-600 px-3 mb-2 tracking-wider">Console Directory</span>
+                <button onclick="navigateDashboard('overview')" id="nav-overview" class="w-full text-left text-xs py-3 px-3 rounded-xl transition flex items-center gap-2.5 sidebar-item-active"><i class="fa-solid fa-grid-2 text-emerald-400"></i> Command Dashboard</button>
+                <button onclick="navigateDashboard('automation')" id="nav-automation" class="w-full text-left text-xs py-3 px-3 rounded-xl transition flex items-center gap-2.5 text-gray-400 hover:bg-gray-900/40"><i class="fa-solid fa-square-terminal"></i> Programmatic SEO Labs</button>
+                <button onclick="navigateDashboard('local-seo')" id="nav-local-seo" class="w-full text-left text-xs py-3 px-3 rounded-xl transition flex items-center gap-2.5 text-gray-400 hover:bg-gray-900/40"><i class="fa-solid fa-map-location-dot"></i> GMB Citation Registry</button>
+                <button onclick="navigateDashboard('platforms')" id="nav-platforms" class="w-full text-left text-xs py-3 px-3 rounded-xl transition flex items-center gap-2.5 text-gray-400 hover:bg-gray-900/40"><i class="fa-solid fa-network-wired"></i> Managed Networks</button>
             </div>
 
-            <!-- Tech Stack Verified Infrastructure Matrix -->
-            <div class="glass-panel border border-gray-800/80 rounded-2xl p-6">
-                <h3 class="text-white font-bold text-xs tracking-widest uppercase mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-square-terminal text-emerald-500"></i> Technology Matrix
-                </h3>
-                <div class="flex flex-wrap gap-1.5">
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">Google Search Console API</span>
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">GA4 Core Engines</span>
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">Google Tag Manager</span>
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">Python Automation Stack</span>
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">Ahrefs Premium Enterprise</span>
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">SEMrush Auditing Arrays</span>
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">Screaming Frog Spiders</span>
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">WordPress Core / Plugins</span>
-                    <span class="bg-gray-950 border border-gray-800/60 text-[10px] text-gray-300 px-2.5 py-1.5 rounded-md mono-font">Yoast & RankMath Deployment</span>
-                </div>
+            <!-- Profile Overview Quick Card -->
+            <div id="sidebar-meta-target" class="glass-panel rounded-2xl p-5 text-xs space-y-3">
+                <!-- Data will inject securely here -->
             </div>
         </aside>
 
-        <!-- ================= MAIN DASHBOARD CONSOLE PANEL (8 Columns) ================= -->
-        <main class="lg:col-span-8 w-full flex flex-col gap-6">
-            
-            <!-- Scaled Metrics Grid Interface -->
-            <section class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div class="glass-panel border border-gray-800/80 rounded-2xl p-4 text-left relative overflow-hidden group">
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-gray-500 block">Total Audited Data</span>
-                    <span class="text-2xl font-extrabold text-white tracking-tight mono-font block mt-1">3,186</span>
-                    <span class="text-[9px] text-emerald-400 mono-font block mt-1"><i class="fa-solid fa-circle-check"></i> Status Inspected</span>
-                </div>
-                <div class="glass-panel border border-gray-800/80 rounded-2xl p-4 text-left relative overflow-hidden group">
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-gray-500 block">GMB Hub Profiles</span>
-                    <span class="text-2xl font-extrabold text-white tracking-tight mono-font block mt-1">6 Active</span>
-                    <span class="text-[9px] text-teal-400 mono-font block mt-1"><i class="fa-solid fa-location-crosshairs"></i> Maps Optimized</span>
-                </div>
-                <div class="glass-panel border border-gray-800/80 rounded-2xl p-4 text-left relative overflow-hidden group">
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-gray-500 block">Backlink Signal Citations</span>
-                    <span class="text-2xl font-extrabold text-white tracking-tight mono-font block mt-1">285+</span>
-                    <span class="text-[9px] text-blue-400 mono-font block mt-1"><i class="fa-solid fa-link"></i> Live Submissions</span>
-                </div>
-                <div class="glass-panel border border-gray-800/80 rounded-2xl p-4 text-left relative overflow-hidden group">
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-gray-500 block">Manual Workflow Reduction</span>
-                    <span class="text-2xl font-extrabold text-white tracking-tight mono-font block mt-1">70%</span>
-                    <span class="text-[9px] text-purple-400 mono-font block mt-1"><i class="fa-solid fa-bolt"></i> Python Automation</span>
-                </div>
-            </section>
-
-            <!-- INTERACTIVE TERMINAL HUB PANEL -->
-            <section class="glass-panel border border-gray-800/80 rounded-2xl p-6 flex flex-col gap-4">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-800 pb-4">
-                    <div class="flex items-center gap-2">
-                        <div class="flex gap-1.5">
-                            <span class="w-3 h-3 rounded-full bg-red-500/70"></span>
-                            <span class="w-3 h-3 rounded-full bg-yellow-500/70"></span>
-                            <span class="w-3 h-3 rounded-full bg-emerald-500/70"></span>
-                        </div>
-                        <span class="text-xs text-white tracking-wide font-semibold uppercase ml-2 flex items-center gap-1.5"><i class="fa-solid fa-laptop-code text-emerald-400"></i> Operation Sandbox Engine</span>
-                    </div>
-                    
-                    <!-- JavaScript Dynamic Tab Navigation Setup -->
-                    <div class="flex bg-gray-950 p-1 rounded-xl border border-gray-800/80 gap-1 text-[11px] font-medium">
-                        <button onclick="switchTerminalTab('redirect-validator')" id="btn-redirect-validator" class="px-3 py-1.5 rounded-lg transition text-gray-400 tab-active">Redirect_Validator</button>
-                        <button onclick="switchTerminalTab('gmb-matrix')" id="btn-gmb-matrix" class="px-3 py-1.5 rounded-lg transition text-gray-400">GMB_Map_Matrix</button>
-                    </div>
-                </div>
-
-                <!-- Tab content 1: Redirect Engine Script Output Simulation -->
-                <div id="tab-redirect-validator" class="terminal-content bg-black/50 rounded-xl p-4 text-xs tracking-normal leading-relaxed mono-font text-gray-400 space-y-1.5 overflow-y-auto max-h-56">
-                    <p class="text-gray-500">// Executing automated multi-threading script on log data records [devicefixes dataset]...</p>
-                    <p class="text-emerald-400">$ python3 run_status_audit.py --file="devicefixes daily work.xlsx" --thread=16</p>
-                    <p class="text-white">[INITIALIZING] Core data parsing array complete: 3,186 log streams isolated.</p>
-                    <div class="pl-3 border-l border-emerald-500/30 space-y-1">
-                        <p class="text-gray-300">↳ [ROW 0001] Target: emaslight.com/forums/topic/... -> <span class="text-emerald-400 font-semibold">HTTP 200 OK</span> | Type: nofollow | Anchor: "laptop repair service"</p>
-                        <p class="text-gray-300">↳ [ROW 0002] Target: gcmediaarts.com/sportsrap/... -> <span class="text-emerald-400 font-semibold">HTTP 200 OK</span> | Type: dofollow | Anchor: "data recovery services"</p>
-                        <p class="text-gray-300">↳ [ROW 0003] Target: legendzforum.com/threads/... -> <span class="text-emerald-400 font-semibold">HTTP 200 OK</span> | Type: nofollow|ugc | Anchor: "computer repair near me"</p>
-                        <p class="text-yellow-400">↳ [ROW 0004] Target: forum.dis-course.net/view... -> <span class="text-red-400 font-semibold">HTTP 401 Unauthorized</span> | Active_Link: False</p>
-                    </div>
-                    <p class="text-emerald-400">[SYSTEM SUCCESS] Code array execution finished. Zero leakages monitored.</p>
-                </div>
-
-                <!-- Tab content 2: GMB Metrics Simulation Output -->
-                <div id="tab-gmb-matrix" class="terminal-content hidden bg-black/50 rounded-xl p-4 text-xs tracking-normal leading-relaxed mono-font text-gray-400 space-y-1.5 overflow-y-auto max-h-56">
-                    <p class="text-gray-500">// Aggregating live localized citation nodes map data maps [All GMB Reports]...</p>
-                    <p class="text-teal-400">$ local_seo_audit --profile-count=6 --target="Battersea Web Expert"</p>
-                    <p class="text-white">[PARSING GRAPH DATA] Active optimization parameters synced:</p>
-                    <div class="pl-3 border-l border-teal-500/30 space-y-1">
-                        <p class="text-gray-300">📂 Profile Node A: [Battersea Web Expert Core Listings] -> Citations Configured: 100% Match</p>
-                        <p class="text-gray-300">📂 Profile Node B: [Effizent Seele GMB Array] -> Multi-location Map-Pack Anchor Setup Verified</p>
-                        <p class="text-gray-300">📂 Profile Node C: [Hooda Nutrition Cluster - Ghaziabad / Noida / Ahmedabad] -> Citation Mapping Online</p>
-                    </div>
-                    <p class="text-teal-400">[SUCCESS] Matrix execution complete. Local map visibility metrics stabilized.</p>
-                </div>
-            </section>
-
-            <!-- MANAGED LIVE PLATFORMS GRID (The Forums Infrastructure) -->
-            <section class="flex flex-col gap-4">
-                <h3 class="text-white font-bold text-sm tracking-wide flex items-center gap-2 px-1">
-                    <i class="fa-solid fa-network-wired text-emerald-500"></i> Active Domain Infrastructures
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Site 1 Card -->
-                    <div class="glass-panel cyber-card rounded-2xl p-5 flex flex-col justify-between group">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="text-white font-bold text-sm tracking-tight group-hover:text-emerald-400 transition">TechZeel Community Platform</h4>
-                                <i class="fa-solid fa-comments text-gray-700 text-lg"></i>
-                            </div>
-                            <p class="text-xs text-gray-400 leading-relaxed">
-                                Engineered indexing configurations, sitemap structures, and clean tracking nodes across discussion networks.
-                            </p>
-                        </div>
-                        <a href="https://community.techzeel.net/" target="_blank" class="text-[11px] font-semibold text-emerald-400 hover:underline mt-4 inline-flex items-center gap-1">
-                            Verify Domain Security <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
-                        </a>
-                    </div>
-
-                    <!-- Site 2 Card -->
-                    <div class="glass-panel cyber-card rounded-2xl p-5 flex flex-col justify-between group">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="text-white font-bold text-sm tracking-tight group-hover:text-emerald-400 transition">GetAssist Forum Network</h4>
-                                <i class="fa-solid fa-users text-gray-700 text-lg"></i>
-                            </div>
-                            <p class="text-xs text-gray-400 leading-relaxed">
-                                Directed anchor layout profiles allocations and mapped contextual authority parameters inside high-volume community threads.
-                            </p>
-                        </div>
-                        <a href="https://forum.getassist.net/" target="_blank" class="text-[11px] font-semibold text-emerald-400 hover:underline mt-4 inline-flex items-center gap-1">
-                            Verify Domain Security <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- LIVE EVIDENCE HUB LAYERS (GSC / GA4 / GMB Screenshots Slots) -->
-            <section class="glass-panel border border-gray-800/80 rounded-2xl p-6">
-                <h3 class="text-white font-bold text-sm tracking-wide mb-1 flex items-center gap-2">
-                    <i class="fa-solid fa-folder-open text-emerald-500"></i> Analytics Performance Evidence Overlays
-                </h3>
-                <p class="text-[11px] text-gray-500 mb-6">Drop your live dashboard visualization snapshots directly inside your GitHub repository directory root using the filenames specified below.</p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <!-- Component Slot A -->
-                    <div class="bg-gray-950/80 border border-gray-900 rounded-xl p-4 flex flex-col items-center justify-center min-h-[150px] text-center group relative overflow-hidden">
-                        <i class="fa-solid fa-chart-line-up text-2xl text-gray-700 group-hover:text-emerald-400 transition mb-2"></i>
-                        <span class="text-xs text-white font-semibold">Google Analytics 4</span>
-                        <span class="text-[10px] text-gray-500 mt-1">Organic Session Trends Matrix</span>
-                        <img src="ga4-report.png" alt="GA4 Overview Graph" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" onerror="this.style.opacity=0;">
-                        <span class="absolute bottom-2 text-[8px] mono-font text-gray-600 block mt-2 opacity-60">Source: ga4-report.png</span>
-                    </div>
-
-                    <!-- Component Slot B -->
-                    <div class="bg-gray-950/80 border border-gray-900 rounded-xl p-4 flex flex-col items-center justify-center min-h-[150px] text-center group relative overflow-hidden">
-                        <i class="fa-solid fa-magnifying-glass-chart text-2xl text-gray-700 group-hover:text-blue-400 transition mb-2"></i>
-                        <span class="text-xs text-white font-semibold">Search Console Logs</span>
-                        <span class="text-[10px] text-gray-500 mt-1">Crawl Nodes Diagnostic Checks</span>
-                        <img src="gsc-report.png" alt="GSC Metrics Graph" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" onerror="this.style.opacity=0;">
-                        <span class="absolute bottom-2 text-[8px] mono-font text-gray-600 block mt-2 opacity-60">Source: gsc-report.png</span>
-                    </div>
-
-                    <!-- Component Slot C -->
-                    <div class="bg-gray-950/80 border border-gray-900 rounded-xl p-4 flex flex-col items-center justify-center min-h-[150px] text-center group relative overflow-hidden">
-                        <i class="fa-solid fa-map-location-dot text-2xl text-gray-700 group-hover:text-teal-400 transition mb-2"></i>
-                        <span class="text-xs text-white font-semibold">GMB Performance Hub</span>
-                        <span class="text-[10px] text-gray-500 mt-1">6 Map-Pack Location Asset Signals</span>
-                        <img src="gmb-report.png" alt="GMB Performance Stats" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" onerror="this.style.opacity=0;">
-                        <span class="absolute bottom-2 text-[8px] mono-font text-gray-600 block mt-2 opacity-60">Source: gmb-report.png</span>
-                    </div>
-                </div>
-            </section>
+        <!-- CORE CONTENT RENDERING HUB (9 Columns) -->
+        <main class="lg:col-span-9 w-full flex flex-col gap-6" id="dashboard-viewport">
+            <!-- Dynamic Content Viewports Inject Securely Via JavaScript Engine -->
         </main>
     </div>
 
-    <!-- MODERN CORE FOOTER PARAMS -->
-    <footer class="text-[10px] text-gray-600 tracking-widest mono-font mt-16 mb-4">
-        // SYSTEMS OVERSEEN BY ALI FAIZ KHAN. CONFIGS LOCKED SECURELY.
-    </footer>
-
-    <!-- INTERACTIVE JAVASCRIPT MODULE ENGINE FOR TAB SWITCHING -->
-    <script>
-        function switchTerminalTab(tabId) {
-            // Hide all terminal tabs
-            document.querySelectorAll('.terminal-content').forEach(el => el.classList.add('hidden'));
-            // Remove active style from all navigation buttons
-            document.getElementById('btn-redirect-validator').classList.remove('tab-active');
-            document.getElementById('btn-gmb-matrix').classList.remove('tab-active');
-            
-            // Activate target components
-            document.getElementById('tab-' + tabId).classList.remove('hidden');
-            document.getElementById('btn-' + tabId).classList.add('tab-active');
-        }
-    </script>
+    <!-- CORE SCRIPTS LOADING INTERFACES -->
+    <script src="app.js"></script>
 </body>
 </html>
